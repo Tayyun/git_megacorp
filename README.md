@@ -37,7 +37,7 @@ Using the below command also provide the same result:
 
 
 
-### Merge Conflict
+### Multiple Merge Conflicts
 
 **"Ours"** refers to the branch your are on (merging into)
 
