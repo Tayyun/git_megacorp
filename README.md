@@ -48,3 +48,13 @@ Using the below command also provide the same result:
 ​	Use `git reset --hard` to undo any resolved merge commit
 
 ​	Check `git config` for `rerere.enabled` to set to false, so that the <u>previous merge conflict resolution will not be used automatically</u>
+
+
+
+### Checkout
+
+> megacorp main $ git checkout --theirs customers/all.csv
+> Updated 1 path from the index
+>
+> megacorp main $ git checkout --ours orgs/partners.txt
+> Updated 1 path from the index
