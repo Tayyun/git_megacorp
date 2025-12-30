@@ -34,3 +34,17 @@ If you accidentally delete the `fix_branch`, this command can help to recover th
 Using the below command also provide the same result:
 
 > git merge HEAD@{<position>}
+
+
+
+### Merge Conflict
+
+**"Ours"** refers to the branch your are on (merging into)
+
+**"Theirs"** refers to the branch being merged
+
+​	**!! REMEMBER !!**
+
+​	Use `git reset --hard` to undo any resolved merge commit
+
+​	Check `git config` for `rerere.enabled` to set to false, so that the <u>previous merge conflict resolution will not be used automatically</u>
