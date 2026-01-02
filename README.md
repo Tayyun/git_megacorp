@@ -76,4 +76,11 @@ From the example, `main` branch contains `J: ...` commit, and `fix` branch conta
 
 3.  Then we `git rebase --continue`, Git will realize that `I: ...` commit was pointless, hence removed it entirely. `git log` will not show `I: ...` commit
 
-  
+
+### Stash
+
+It work like a "clipboard" temporary storage for your index (staging area)
+
+> git stash <list> <pop> <apply> ...
+
+It uses the stack data structure to handle multiple stashes
