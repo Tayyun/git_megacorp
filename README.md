@@ -130,3 +130,33 @@ Then the command will show the "middle" commits of the range, and again we shoul
 Automation using scripts are supported
 
 > git bisect run <scripts.sh>
+
+
+
+### Worktree
+
+We can think of it as another branch, but having a separated "repo" (containing all the files) similar to our default working tree
+
+> git worktree add <path_to_worktree>
+
+This create a linked worktree
+
+We can delete the worktree by
+
+> git worktree remove <worktree_branch_name>
+
+or
+
+> rm -rf <path_to_worktree>
+>
+> git worktree prune
+
+
+
+### Tag
+
+To simplify, it is just a immutable pointer to a commit
+
+> git tag -a "tag_name" -m "tag message"
+
+Use for marking specific, permanent points in project history (e.g. version control and release management)
