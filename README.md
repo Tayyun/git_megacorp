@@ -1,4 +1,5 @@
-# megacorp | Good Marketing
+# megacorp
+
 
 
 ### Fork vs Clone
