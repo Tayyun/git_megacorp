@@ -100,3 +100,33 @@ It uses the stack data structure to handle multiple stashes
 When working from a **public branch**, use `git revert`. Create a new commit and undoes a previous commit
 
 `git reset` ALWAYS UNDO (DELETE) commits, making the branch became unsync from other 
+
+
+
+### Cherry Pick
+
+Often used when having a `release` (production) branch and a `main` (developement) branch. To ONLY select **some** commits to add to the target branch
+
+> git cherry-pick <commit-hash>
+
+
+
+### Bisect
+
+View a branch commits as an array, perform a **binary search**.
+
+> git bisect start
+
+We first define the _range_ between the **good** commit and the **bad** commit
+
+> git bisect good/bad
+
+Then the command will show the "middle" commits of the range, and again we should let Git knows is that commit good or bad
+
+> git bisect reset
+
+
+
+Automation using scripts are supported
+
+> git bisect run <scripts.sh>
