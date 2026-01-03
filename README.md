@@ -77,6 +77,13 @@ From the example, `main` branch contains `J: ...` commit, and `fix` branch conta
 
 3.  Then we `git rebase --continue`, Git will realize that `I: ...` commit was pointless, hence removed it entirely. `git log` will not show `I: ...` commit
 
+### Squash
+
+Combine commits 
+
+> This feature is enabled through `git rebase -i` (interactive mode) or `git merge --squash <branch>`
+
+
 
 ### Stash
 
@@ -85,3 +92,11 @@ It work like a "clipboard" temporary storage for your index (staging area)
 > git stash <list> <pop> <apply> ...
 
 It uses the stack data structure to handle multiple stashes
+
+
+
+### Revert vs Reset
+
+When working from a **public branch**, use `git revert`. Create a new commit and undoes a previous commit
+
+`git reset` ALWAYS UNDO (DELETE) commits, making the branch became unsync from other 
